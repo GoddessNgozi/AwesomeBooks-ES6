@@ -87,5 +87,4 @@ const upDate = () => {
   const now = DateTime.now();
   timer.innerHTML = now.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
 };
-
 setInterval(upDate, 1000);
