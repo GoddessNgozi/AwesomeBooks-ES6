@@ -12,7 +12,7 @@
 
 ## Project Preview
 
-[Live Demo](https://ngozikanwocha.github.io/AwesomeBooks-ES6/)
+[Live Demo](https://goddessngozi.github.io/AwesomeBooks-ES6/)
 
 ![Awesome Book Demo](demo.gif)
 
