@@ -1,5 +1,11 @@
 import {store} from './modules/store.js';
 import {ui} from './modules/ui.js';
+import { DateTime } from "./modules/luxon.js";
+
+let dt = DateTime.now();
+dt = dt.toLocaleString(DateTime.DATETIME_MED)
+const dater = document.querySelector('.dater');
+dater.innerHTML = dt;
 
 class Book {
   constructor(title, author, id = Math.floor(Math.random() * 1000000)) {

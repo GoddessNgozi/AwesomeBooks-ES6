@@ -28,6 +28,12 @@ header {
   align-items: center;
 }
 
+.dater {
+  float: right;
+  margin-right: 120px;
+  margin-top: 10px;
+}
+
 .list {
   cursor: pointer;
 }
