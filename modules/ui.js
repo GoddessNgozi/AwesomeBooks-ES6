@@ -14,7 +14,6 @@ export default class UI {
         <div>
         <div class="bookDiv">
         <h4 id="title" class="">${book.title} &nbsp; &nbsp; &nbsp; &nbsp; by &nbsp; &nbsp; &nbsp; &nbsp; ${book.author}</h4>
-        <h4 class="hidy"></h4>
         <button id="${book.id}" class="delete">Remove</button>
         </div>
         <hr class="hr">
