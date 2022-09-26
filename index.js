@@ -1,9 +1,12 @@
-import {store} from './modules/store.js';
-import {ui} from './modules/ui.js';
-import { DateTime } from "./modules/luxon.js";
+import Store from './modules/store.js';
+import UI from './modules/ui.js';
+import { DateTime } from './modules/luxon.js';
+
+const store = new Store();
+const ui = new UI();
 
 let dt = DateTime.now();
-dt = dt.toLocaleString(DateTime.DATETIME_MED)
+dt = dt.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 const dater = document.querySelector('.dater');
 dater.innerHTML = dt;
 
@@ -34,8 +37,7 @@ document.querySelector('.bookForm').addEventListener('submit', (e) => {
 
 document.querySelector('.books').addEventListener('click', (e) => {
   if (e.target.className === 'delete') {
-    const id = e.target.previousElementSibling.innerText;
-    store.removeBook(id);
+    store.removeBook(e.target.id);
     ui.deleteBook(e.target);
   }
 });
