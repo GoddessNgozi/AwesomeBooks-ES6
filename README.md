@@ -12,6 +12,8 @@
 
 ## Project Preview
 
+[Live Demo](https://ngozikanwocha.github.io/AwesomeBooks-ES6/)
+
 ![Awesome Book Demo](demo.gif)
 
 
